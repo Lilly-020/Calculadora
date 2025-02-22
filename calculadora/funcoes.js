@@ -18,6 +18,6 @@ function resultado() {
     try {
         display.innerText = eval(display.innerText);//TRANSFORMA A STRING EM UMA CONTA MATEMÁTICA
     } catch (e) {
-        display.innerText = "Erro";//SE A STRING NÃO É RECONHECIDA, GERRA ERRO
+        display.innerText = "Erro";//SE A STRING NÃO É RECONHECIDA, GERA ERRO
     }
 }
