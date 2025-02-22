@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!--CHAMA O DOCUMENTO DE CSS-->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!--CRIA UM CONTEINER PARA MANTER TODOS OS ITENS-->
+    <div class="conteiner">
+        <!--CRIA UMA LABLE PARA MOSTRAR RESULTADOS-->
+        <label class="display" id="display" value="">0</label>
+        <!--CRIA UMA DIV QUE MANTÉM OS BOTÕES JUNTO-->
+        <!--NÃO RECOMENDADO, SERIA MELHOR SEPARAR OPERADORES DE NUMEROS, POR ORGANIZAÇÃO
+        E FACILITA O TRABALHO EM CSS, NÃO SEJA BURRO IGUAL EU FUI :)-->
+        <div class="calculator">
+            <button class="numbers" onclick="adicionarNumero('1')">1</button>
+            <button class="numbers" onclick="adicionarNumero('2')">2</button>
+            <button class="numbers" onclick="adicionarNumero('3')">3</button>
+            <button class="numbers" onclick="adicionarOperador('+')">+</button>
+        
+            <button class="numbers" onclick="adicionarNumero('4')">4</button>
+            <button class="numbers" onclick="adicionarNumero('5')">5</button>
+            <button class="numbers" onclick="adicionarNumero('6')">6</button>
+            <button class="numbers" onclick="adicionarOperador('-')">-</button>
+        
+            <button class="numbers" onclick="adicionarNumero('7')">7</button>
+            <button class="numbers" onclick="adicionarNumero('8')">8</button>
+            <button class="numbers" onclick="adicionarNumero('9')">9</button>
+            <button class="numbers" onclick="adicionarOperador('*')">*</button>
+
+            <button class="numbers" onclick="limparDisplay('')">AC</button>
+            <button class="numbers" onclick="adicionarNumero('0')">0</button>
+            <button class="numbers" onclick="adicionarOperador('/')">/</button>
+            <button class="numbers" onclick="adicionarOperador('.')">.</button>
+            <button class="numbers" id="igual" onclick="resultado('=')">=</button>
+            
+        </div>
+    </div>
+    <!--CHAMA O DOCUMENTO JS-->
+    <script src="funcoes.js"></script>
+</body>
+</html>

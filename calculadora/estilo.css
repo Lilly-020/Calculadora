@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Dangrek&family=DynaPuff:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap');
+body{
+    background-color: rgb(197, 156, 188);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    
+}
+:root{
+    --fonte: "Dangrek", serif;
+}
+.conteiner{
+    background-color: rgb(189, 102, 172, 0.5);
+    width: 500px;
+    height: 670px;
+    border-radius: 10%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 8px #a37298;
+}
+.display{
+    background-color: transparent; 
+    color: aliceblue;   
+    width: inherit;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: end;   
+    box-sizing: border-box;
+    padding: 50px 20px 40px 10px;
+    font-size: 300%;
+    font-family: var(--fonte);    
+}
+.calculator{
+    background-color: rgba(177, 109, 163, 0.5);
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 118px);
+    gap: 10px;
+    padding: 50px 10px 10px 10px;    
+}
+.numbers{
+    background-color: rgb(197, 156, 188, 0.5);
+    color: rgb(225, 226, 227);
+    box-shadow: 2px 2px 5px #aa5e99;
+    border-style: double;
+    border: none;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-family: var(--fonte);
+}
+
+.numbers:hover {
+    box-shadow: inset 5px 0.5px 8px #aa5e99;
+}
+#igual{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 480px; 
+    height: 80px; 
+    border-radius: 50%; 
+    background-color: rgb(197, 156, 188, 0.5);
+    color: rgb(225, 226, 227);
+    box-shadow: 2px 2px 5px #aa5e99;
+    font-size: 30px; 
+    font-family: var(--fonte);
+    font-size: 50px;
+}
+#igual:hover{
+    box-shadow: inset 5px 0.5px 8px #aa5e99;
+}
+  
+@media (max-width: 500px) {
+    .conteiner {
+        height: 550px;
+        width: 250px;
+        border-radius: 2%;       
+    }
+    .display{
+        padding: 10px 15px 10px 10px;
+    }
+    .calculator{
+        grid-template-columns: repeat(3, 50px);
+        padding: 50px 50px 100px 30px;
+        gap: 20px;
+    }
+    .numbers{
+        height: 50px;
+        width: 50px;
+    }
+    #igual{
+        width: 120px;
+    }
+
+}    
